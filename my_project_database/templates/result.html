@@ -1,0 +1,41 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATABASE</title>
+    <style>
+        p{
+            margin-left: 100px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+        body {
+  background: linear-gradient(45deg,  rgba(66, 183, 245,0.8) 0%,rgba(66, 245, 189,0.4) 100%);
+  color: gray;
+  font-family: base-font-family;
+  font-size: base-font-size;
+  line-height: base-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+    </style>
+</head>
+<body>
+    <form action ='result' method="post">
+        {% csrf_token %}
+        <div style="color: black; margin-top: 400px; font-size: larger;" >
+        
+    <p>welcome, {{firstname}} {{lastname}}.</p>
+    <p>My register number is: {{register}}</p>
+   <p>My department is: {{department}}.</p>
+<p>My phone number is: {{mobile}}.</p>
+     </div>
+    </form>
+
+</body>
+</html>
